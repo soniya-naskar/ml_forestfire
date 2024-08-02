@@ -6,7 +6,8 @@ from sklearn.preprocessing import StandardScaler
 
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app=application
 ridge_pkl=pickle.load(open('models/ridge.pkl','rb'))
 scaler_pkl=pickle.load(open('models/scaler.pkl','rb'))
 
